@@ -104,6 +104,8 @@ class ModelConverter:
                         val = ((blockStart >> start_bit_offset) & mask) | ((blockEnd << end_offset) & mask)
                         blocks[x][y][z] = val
         print(" Load finished.")
+        print(" -- Push SPACE to start --")
+        print(" --  按空格键开始转换  --")
 
         points = []
         for x in range(abs(width)):
@@ -153,13 +155,13 @@ class ModelConverter:
         self.model_size_z = enclose_size["z"].value
 
 
-        print(f"作者：{author}")
+        print(f"作者: {author}")
         print(f"地图尺寸: [", self.model_size_x, ",", self.model_size_y, ",", self.model_size_z, "]")
-        print(f"子区域数量：{region_count}")
-        print(f"非空气方块数：{total_blocks}")
-        print(f"总体积：{total_volume}")
+        print(f"子区域数量: {region_count}")
+        print(f"非空气方块数: {total_blocks}")
+        print(f"总体积: {total_volume}")
         nbits  = max(2, math.ceil(math.log2(len(blockstate_palette))) )
-        print(f"最大索引bit数:{nbits}")
+        print(f"最大索引bit数: {nbits}")
 
         self.renderPoints = self.process_nbt_region_data( block_states , nbits)
     
