@@ -1,0 +1,6 @@
+{
+    "LitematicaFile": "inputs/alley.litematic",
+    "OutputFile"    : "outputs/point_cloud.pcd",
+    "resolution"    : 0.5,
+    "cube_size"     : 1.5
+}
