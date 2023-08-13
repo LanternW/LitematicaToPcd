@@ -36,3 +36,9 @@ python main.py
 glumpy 及其依赖有可能在 python 3.11版本无法编译，建议使用3.11以下版本的python
 
 非空气方块一律按Cube处理，不考虑半砖和异形方块。
+
+
+
+
+![trans](imgs/2.png)
+![ori](imgs/1.png)
