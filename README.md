@@ -1,4 +1,4 @@
-### LiteMatica --> pcd
+### Litematica --> pcd
 
 将Minecraft地图转换为pcd点云文件的小工具。
 本仓库属于 Minecraft to gridmap 仓库的第二代。不需要安装额外的mod了，读取方式更改为直接读取较新版本的投影文件( .litematic 后缀 )。
